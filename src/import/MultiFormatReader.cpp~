@@ -55,7 +55,7 @@ void MultiFormatReader::Reset(size_t startoffset)
 {
    if (mpFid != NULL)
    {
-      fseek (mpFid, startoffset, SEEK_SET);
+      rewind(mpFid);
    }
 }
 

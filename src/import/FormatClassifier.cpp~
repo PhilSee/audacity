@@ -344,7 +344,7 @@ void FormatClassifier::FindSignalStart()
          
          if (actRead == cSiglen)
          {
-            ConvertSamples(&mRawBuffer[0], &mSigBuffer[0], testFormat);
+            ConvertSamples(mRawBuffer, mSigBuffer, testFormat);
             i++;
          }
       }

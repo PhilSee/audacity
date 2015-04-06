@@ -96,7 +96,7 @@ private:
    std::vector<float>   mAuxBuffer;
    std::vector<float>   mWinBuffer;
    std::vector<float>   mEqBuffer;
-   std::vector<uint8_t> mRawBuffer;
+   std::vector<uint8_t>   mRawBuffer;
    
    size_t               mSignalStart;
    
