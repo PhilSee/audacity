@@ -64,22 +64,22 @@ public:
 
 private:
 
-   static const size_t  cSiglen = 1024;
-   static const size_t  cRawSiglen = 8 * cSiglen;
-   static const size_t  cPolyTaps = 4;
-   static const size_t  cNumInts = 32;
+   const size_t  cSiglen = 1024;
+   const size_t  cRawSiglen = 8 * cSiglen;
+   const size_t  cPolyTaps = 4;
+   const size_t  cNumInts = 32;
    // Normalized dither set on frequency
-   static const float   cDitherF1 = 0.31f;
+   const float   cDitherF1 = 0.31f;
    // Normalized dither level frequency
-   static const float   cDitherF2 = 0.42f;
+   const float   cDitherF2 = 0.42f;
    // Dither equalizer attenuation [dB]
-   static const float   cDitherA  = 12.0f;
+   const float   cDitherA  = 12.0f;
    // Minimum RMS value of a signal window to be treated as a signal
-   static const float   cMinRms = 1e-12;
+   const float   cMinRms = 1e-12;
    // Number of windows to skip between signal search evaluations
-   static const size_t  cSigSearchGridSize = 32;
+   const size_t  cSigSearchGridSize = 32;
    // Number of bytes to skip file header
-   static const size_t  cHeaderSkip = 1024;
+   const size_t  cHeaderSkip = 1024;
       
    
    size_t               mFiltSiglen;
